@@ -22,27 +22,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.viewResultColor = [[UIView alloc] initWithFrame:CGRectMake(130, 120, 240, 40)];
+    self.viewResultColor = [[UIView alloc] initWithFrame:CGRectMake(130, 60, 240, 40)];
     // self.viewResultColor.layer.cornerRadius = 5.0;
     self.viewResultColor.layer.backgroundColor = UIColor.lightGrayColor.CGColor;
     [self.view addSubview:_viewResultColor];
     
     
-    self.textFieldRed = [[UITextField alloc] initWithFrame:CGRectMake(100, 200, 270, 40)];
+    self.textFieldRed = [[UITextField alloc] initWithFrame:CGRectMake(100, 140, 270, 40)];
     [self.textFieldRed setPlaceholder:@"0..255"];
     self.textFieldRed.layer.borderWidth = 1.0;
     self.textFieldRed.layer.cornerRadius = 5.0;
     self.textFieldRed.layer.borderColor = UIColor.lightGrayColor.CGColor;
     
     
-    self.textFieldGreen = [[UITextField alloc] initWithFrame:CGRectMake(100, 280, 270, 40)];
+    self.textFieldGreen = [[UITextField alloc] initWithFrame:CGRectMake(100, 220, 270, 40)];
     [self.textFieldGreen setPlaceholder:@"0..255"];
     self.textFieldGreen.layer.borderWidth = 1.0;
     self.textFieldGreen.layer.cornerRadius = 5.0;
     self.textFieldGreen.layer.borderColor = UIColor.lightGrayColor.CGColor;
     
     
-    self.textFieldBlue = [[UITextField alloc] initWithFrame:CGRectMake(100, 360, 270, 40)];
+    self.textFieldBlue = [[UITextField alloc] initWithFrame:CGRectMake(100, 300, 270, 40)];
     [self.textFieldBlue setPlaceholder:@"0..255"];
     self.textFieldBlue.layer.borderWidth = 1.0;
     self.textFieldBlue.layer.cornerRadius = 5.0;
@@ -68,29 +68,29 @@
     
     
     
-    self.labelResultColor = [[UILabel alloc] initWithFrame:CGRectMake(20, 120, 110, 40)];
+    self.labelResultColor = [[UILabel alloc] initWithFrame:CGRectMake(20, 60, 110, 40)];
     // self.labelResultColor.backgroundColor = UIColor.blackColor;
     self.labelResultColor.text = @"Color";
     //  self.labelResultColor.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:self.labelResultColor];
     
-    self.labelRed = [[UILabel alloc] initWithFrame:CGRectMake(20, 200, 60, 40)];
+    self.labelRed = [[UILabel alloc] initWithFrame:CGRectMake(20, 140, 60, 40)];
     // self.labelRed.backgroundColor = UIColor.redColor;
     self.labelRed.text = @"RED";
     
     [self.view addSubview:self.labelRed];
     
-    self.labelGreen = [[UILabel alloc] initWithFrame:CGRectMake(20, 280, 60, 40)];
+    self.labelGreen = [[UILabel alloc] initWithFrame:CGRectMake(20, 220, 60, 40)];
     // self.labelGreen.backgroundColor = UIColor.greenColor;
     self.labelGreen.text = @"GREEN";
     [self.view addSubview:self.labelGreen];
     
-    self.labelBlue = [[UILabel alloc] initWithFrame:CGRectMake(20, 360, 60, 40)];
+    self.labelBlue = [[UILabel alloc] initWithFrame:CGRectMake(20, 300, 60, 40)];
     // self.labelBlue.backgroundColor = UIColor.blueColor;
     self.labelBlue.text = @"BLUE";
     [self.view addSubview:self.labelBlue];
     
-    self.buttonProcess = [[UIButton alloc] initWithFrame:CGRectMake(self.view.frame.size.width/2-40, 430, 80, 40)];
+    self.buttonProcess = [[UIButton alloc] initWithFrame:CGRectMake(self.view.frame.size.width/2-40, 370, 80, 40)];
     //   self.buttonProcess.backgroundColor = UIColor.blackColor;
     [self.buttonProcess setTitle:@"Process"
                         forState:UIControlStateNormal];
