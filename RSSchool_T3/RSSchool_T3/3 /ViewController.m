@@ -94,7 +94,7 @@
     //   self.buttonProcess.backgroundColor = UIColor.blackColor;
     [self.buttonProcess setTitle:@"Process"
                         forState:UIControlStateNormal];
-    [self.buttonProcess setTitleColor:UIColor.systemBlueColor forState:UIControlStateNormal];
+    [self.buttonProcess setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [self.view addSubview:self.buttonProcess];
     
     [self.buttonProcess addTarget:self action:@selector(buttonTyped) forControlEvents:UIControlEventTouchUpInside];
